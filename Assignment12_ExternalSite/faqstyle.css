@@ -1,0 +1,138 @@
+/* Justine Laderer 7476185 */
+
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(Graphics/bakedgoods.jpg);
+    padding: 15px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header h1{
+    color: #FFFFFF;
+    font-family: 'Chicle', cursive;
+    font-size: 6rem;
+    position: absolute;
+    right: 20%;
+    background: rgba(0, 0, 15, 0.5);
+    padding: 25px;
+    border-radius:0% 20px;
+}
+
+h1 span{
+    font-family: "Fuzzy Bubbles", sans-serif;
+    display: block;
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+nav{
+    background: #613613;
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    margin: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background: #997950;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    font-size: 40px;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    height: 100%;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background: #C5C6C7;
+    color: #000000;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section1 section1";
+    gap: 10px;
+}
+
+section:nth-of-type(1) {
+    grid-area: section1;
+    background-color: #795C32;
+    padding: 10px;
+}
+
+section h2 {
+    color: #FFFFFF;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 40px;
+}
+
+section pre {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+footer{
+    background: #613613;
+    color: #FFFFFF;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+header h1{
+    font-size: 3rem;
+    right: 10%;
+    padding: 15px;
+}
+header h1 span{
+    font-size: 2rem;
+}
+main {
+    display: block;
+  }
+nav ul{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+section pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+}
